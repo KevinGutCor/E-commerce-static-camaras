@@ -1,2 +1,820 @@
+@charset "UTF-8";
 /* Utilidades */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&family=Righteous&family=Roboto+Mono:wght@300;400&display=swap");
+/* Variables globales */
+/* color navbar */
+/* color de botones */
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.1rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.3rem; }
+
+p {
+  font-size: 1.2rem; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.btn__vmas {
+  background-color: orange;
+  color: white;
+  padding: 8px 25px;
+  font-size: 18px;
+  border-radius: 5px; }
+
+.btn__vmas:hover {
+  background-color: rgba(255, 179, 37, 0.705);
+  color: white;
+  border: 1px solid orange;
+  box-shadow: 0 0 20px rgba(250, 171, 0, 0.685); }
+
+.galeria__btn {
+  background-color: blueviolet;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px; }
+
+.galeria__btn:hover {
+  background-color: rgba(163, 82, 238, 0.781);
+  border: 2px solid rgba(163, 82, 238, 0.781);
+  box-shadow: 0 0 20px #914dd1; }
+
+.nosotros__btn {
+  color: #4da8fd; }
+
+body {
+  font-family: 'roboto', sans-serif; }
+
 /* Secciones */
+/*SECCIÓN HEADER*/
+.logo {
+  margin-left: 50px;
+  color: #ffaf01 !important;
+  font-family: "Righteous", sans-serif;
+  font-size: 2.6rem;
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  padding: 0px !important; }
+
+.navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
+
+.navbar-collapse {
+  justify-content: end !important; }
+
+.nav-item {
+  padding: 10px 20px 6px 20px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600 !important; }
+
+.nav-item:hover {
+  background-color: #313030;
+  border-bottom: 4px solid #ffd61e;
+  color: white; }
+
+.dropdown-menu {
+  background-color: #202020; }
+
+.dropdown-item {
+  color: white !important; }
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-left: 4px solid #ffd61e;
+  border-right: 4px solid #ffd61e; }
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid #ffd61e;
+  color: #ffd61ea4 !important; }
+
+/* SECCIÓN MAIN-INDEX*/
+.hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613263/proyecto-coder-hause/rueban-prince-gJn5s585nDI-unsplash_dmaqst.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección camara index */
+.camara__container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  gap: 30px;
+  text-align: center; }
+  .camara__container .camara__title {
+    text-transform: uppercase; }
+  .camara__container .camara__img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61); }
+
+/* Sección lentes index */
+.lentes {
+  background-color: black;
+  color: white; }
+  .lentes .lentes__title {
+    text-transform: uppercase;
+    padding-top: 2rem;
+    text-align: center; }
+  .lentes .lentes__container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid; }
+    .lentes .lentes__container .lentes__img {
+      background: #e31111;
+      background: linear-gradient(344deg, #e31111 3%, #fa490e 32%, #fade20 81%);
+      width: 180px;
+      height: 180px;
+      border-radius: 100%; }
+    .lentes .lentes__container .lent-img-2 {
+      background: #a8079a;
+      background: linear-gradient(204deg, #a8079a 26%, #5a43f4 68%, #93b4f9 100%); }
+    .lentes .lentes__container .lent-img-3 {
+      background-image: linear-gradient(to right top, #0038ff, #005dff, #0079ff, #0090ff, #00a5ff, #00a8ff, #00acff, #00afff, #2ba2ff, #798dff, #c169ff, #ff00f4); }
+    .lentes .lentes__container .lentes__cartas {
+      background-color: #0e0e0e;
+      border-radius: 15px;
+      margin: 15px 0px;
+      padding: 20px 0px;
+      text-align: center; }
+    .lentes .lentes__container .lentes__paragraph {
+      padding: 5px; }
+
+/* Sección galería index */
+.galeria {
+  height: 75vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552757/proyecto-coder-hause/img-prueba2-orange_zshs4n.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .galeria .galeria__container {
+    text-align: center;
+    width: 80%; }
+  .galeria .galeria__text {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white; }
+
+/* Sección accesorios index */
+.accesorios__container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  text-align: center; }
+  .accesorios__container .accesorios__img {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61); }
+
+/* Sección nosotros index */
+.nosotros {
+  background-color: black;
+  color: white; }
+  .nosotros .nosotros__container {
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center; }
+  .nosotros .nosotros__img {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(77, 76, 76, 0.61); }
+
+/* Sección datos index */
+.datos {
+  margin: 30px 0px;
+  text-align: center; }
+  .datos .datos__container {
+    margin: 0px auto;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    gap: 20px;
+    text-align: center; }
+    .datos .datos__container .datos__cartas {
+      background-color: #dddbdb;
+      padding: 20px 5px;
+      border-radius: 5px; }
+      .datos .datos__container .datos__cartas .datos__paragraph {
+        font-weight: 600; }
+
+@media (min-width: 768px) {
+  /* sección hero index*/
+  .hero {
+    height: 70vh; }
+  /* Sección camara index*/
+  .camara__container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; }
+  /* Sección lentes index */
+  .lentes__container {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem; }
+    .lentes__container .lentes__cartas {
+      padding: 1rem; }
+  /* Sección galería index*/
+  .galeria {
+    height: 65vh; }
+  /* Sección accesorios index */
+  .accesorios__container {
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas: "elemt-1    elemt-2"; }
+    .accesorios__container .accesorios__text {
+      grid-area: elemt-2; }
+    .accesorios__container .accesorios__img {
+      grid-area: elemt-1; }
+  /* Sección nosotros index */
+  .nosotros__container {
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; }
+  /* Sección datos index*/
+  .datos__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%; }
+    .datos__container .datos__cartas {
+      padding: 20px 10px; } }
+
+@media (min-width: 1024px) {
+  /* camara index*/
+  .camara__container .camara__paragraph {
+    padding: 1rem 0px; }
+  .camara__container .camara__img {
+    width: 80%; }
+  /* lentes index */
+  .lentes__container {
+    width: 100%;
+    padding-bottom: 30px; }
+    .lentes__container .lentes__paragraph {
+      margin: 1.2rem 12px; }
+  /* accesorios index */
+  .accesorios__container .accesorios__paragraph {
+    padding: 1rem 0px; }
+  .accesorios__container .accesorios__img {
+    width: 80%; }
+  /* nosotros index */
+  .nosotros__container {
+    margin: 30px 0px; }
+    .nosotros__container .nosotros__paragraph {
+      padding: 1rem 0px; }
+    .nosotros__container .nosotros__img {
+      width: 75%; } }
+
+/* SECCIÓNES-LOCALES */
+.locales__hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552744/proyecto-coder-hause/inicio-locales_ojwsgq.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .locales__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .locales__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección ubicación locales*/
+.ubicacion__container {
+  padding: 30px 0px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  border-bottom: 1px solid black;
+  text-align: center; }
+  .ubicacion__container .ubicacion__ubi {
+    width: 95%; }
+    .ubicacion__container .ubicacion__ubi .ubicacion__map {
+      width: 95%;
+      height: 280px;
+      box-shadow: 0 0 10px rgba(65, 63, 58, 0.685); }
+
+@media (min-width: 768px) {
+  .locales__hero {
+    height: 70vh; }
+  /* Sección locales */
+  .ubicacion__container .locales__hero {
+    height: 70vh; }
+  .ubicacion__container .ubicacion__ubi {
+    height: 320px; }
+    .ubicacion__container .ubicacion__ubi .ubicacion__map {
+      width: 90%;
+      height: 320px; } }
+
+@media (min-width: 1024px) {
+  /* Sección locales */
+  .ubicacion__container {
+    grid-template-columns: repeat(2, 1fr); }
+    .ubicacion__container .ubicacion__ubi {
+      height: 380px; }
+      .ubicacion__container .ubicacion__ubi .ubicacion__map {
+        width: 90%;
+        height: 380px; } }
+
+/* SECCION MAIN-GALERÍA*/
+.galeria__hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552766/proyecto-coder-hause/1-inicio-galeria_kwkw6m.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .galeria__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .galeria__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección galería */
+.sect-galeria__container {
+  margin: 10px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  border-bottom: 1px solid black; }
+  .sect-galeria__container .sect-galeria__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+  .sect-galeria__container .sect-galeria__img:hover {
+    cursor: pointer;
+    opacity: 0.7; }
+
+@media (min-width: 768px) {
+  .galeria__hero {
+    height: 70vh; }
+  /* Sección galería */
+  .sect-galeria__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img_1 img_2" "img_3 img_3" "img_11 img_14"  "img_8 img_8" "img_4 img_5" "img_7 img_7" "img_13 img_12" "img_9 img_9" "img_6 img_10"; }
+    .sect-galeria__container .img_1 {
+      grid-area: img_1; }
+    .sect-galeria__container .img_2 {
+      grid-area: img_2; }
+    .sect-galeria__container .img_3 {
+      grid-area: img_3; }
+    .sect-galeria__container .img_4 {
+      grid-area: img_4; }
+    .sect-galeria__container .img_5 {
+      grid-area: img_5; }
+    .sect-galeria__container .img_6 {
+      grid-area: img_6; }
+    .sect-galeria__container .img_7 {
+      grid-area: img_7; }
+    .sect-galeria__container .img_8 {
+      grid-area: img_8; }
+    .sect-galeria__container .img_9 {
+      grid-area: img_9; }
+    .sect-galeria__container .img_10 {
+      grid-area: img_10; }
+    .sect-galeria__container .img_11 {
+      grid-area: img_11; }
+    .sect-galeria__container .img_12 {
+      grid-area: img_12; }
+    .sect-galeria__container .img_13 {
+      grid-area: img_13; }
+    .sect-galeria__container .img_14 {
+      grid-area: img_14; } }
+
+@media (min-width: 1024px) {
+  /* Seccipon galería */
+  .sect-galeria__container {
+    margin: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img_1  img_2   img_3" "img_4  img_4   img_11" "img_5  img_6   img_7" "img_14 img_13  img_12" "img_8  img_9  img_10"; } }
+
+/* SECCIÓN FOOTER*/
+.footer {
+  background-color: black;
+  color: white;
+  border-top: 5px solid yellow; }
+  .footer .footer__container {
+    width: 100%;
+    display: grid;
+    place-items: center; }
+    .footer .footer__container .footer__icons {
+      padding: 15px;
+      margin: 0px 10px;
+      border-bottom: 1px solid #a8a8a8; }
+    .footer .footer__container .footer__copy {
+      margin-top: 15px; }
+    .footer .footer__container .footer__img {
+      width: 38px;
+      margin: 0px 10px; }
+    .footer .footer__container .footer__img:hover {
+      background-color: rgba(236, 240, 10, 0.315);
+      border-radius: 100%; }
+
+@media (min-width: 768px) {
+  /* Sección footer */
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "copy   icons"; }
+    .footer__container .footer__icons {
+      grid-area: icons; }
+    .footer__container .footer__copy {
+      grid-area: copy; } }
+
+/* SECCIÓN MAIN-NOSOTROS */
+.nosotros__hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613237/proyecto-coder-hause/yarenci-hdz-7hjgRvEBWKE-unsplash_dokihg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .nosotros__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .nosotros__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Seccipon historia */
+.historia__container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  border-bottom: 1px solid black;
+  text-align: center; }
+  .historia__container .historia__title-h3 {
+    font-weight: 600; }
+  .historia__container .historia__img {
+    width: 95%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(65, 64, 62, 0.685); }
+
+@media (min-width: 768px) {
+  .nosotros__hero {
+    height: 70vh; }
+  .historia__container {
+    width: 75%; }
+    .historia__container .historia__img {
+      width: 85%; } }
+
+/* SECCIÓN PRO-CAM */
+.main__sec-hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552726/proyecto-coder-hause/img-pro-cam-reflex_yfxgc3.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  color: white; }
+  .main__sec-hero .hero__text {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center; }
+
+.productos__container {
+  margin: 0px auto;
+  display: grid; }
+  .productos__container .productos__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 10px; }
+  .productos__container .productos__cont-img {
+    width: 95%;
+    margin: 10px auto;
+    place-items: center;
+    text-align: center; }
+  .productos__container .productos__cont-img {
+    padding: 15px 0px; }
+
+.productos__compu-1 {
+  background-color: black;
+  color: white; }
+  .productos__compu-1 .productos__text {
+    color: #b9b9b9; }
+
+.carousel {
+  border: 2px solid #555454 !important;
+  width: 95% !important;
+  border-radius: 10px;
+  margin: 0px auto;
+  box-shadow: 0 0 15px rgba(39, 39, 39, 0.404); }
+  .carousel .carousel-item {
+    background: #aeaeb1;
+    background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%); }
+  .carousel .img__m {
+    margin: auto;
+    width: 85%; }
+  .carousel .carousel-control-prev-icon {
+    background-color: rgba(255, 166, 0, 0.836) !important;
+    border-radius: 15px; }
+  .carousel .carousel-control-next-icon {
+    background-color: rgba(255, 166, 0, 0.836) !important;
+    border-radius: 15px; }
+
+/* Seccion de cartas */
+.productos__cont-info {
+  display: grid;
+  place-items: center;
+  padding: 20px 0px; }
+  .productos__cont-info .productos__title-info {
+    text-align: center;
+    text-align: center;
+    font-weight: 500; }
+  .productos__cont-info .productos__text {
+    width: 85%;
+    margin: 10px 30px;
+    font-style: italic; }
+  .productos__cont-info .productos__btn {
+    padding-top: 10px;
+    margin: 0px auto;
+    place-items: center; }
+    .productos__cont-info .productos__btn .btn__precio {
+      margin-right: 10px;
+      color: black;
+      padding: 8px 18px;
+      font-weight: 550;
+      background-color: #c5c4c4;
+      border-radius: 5px; }
+    .productos__cont-info .productos__btn .btn__comprar {
+      text-decoration: none;
+      color: white;
+      margin-left: 10px;
+      padding: 8px 25px;
+      font-weight: 550;
+      background-color: orange;
+      border-radius: 5px; }
+    .productos__cont-info .productos__btn .btn__comprar:hover {
+      background-color: rgba(255, 179, 37, 0.705);
+      border: 1px solid orange;
+      box-shadow: 0 0 15px rgba(250, 171, 0, 0.685); }
+
+@media (min-width: 768px) {
+  .main__sec-hero {
+    height: 70vh; }
+  .productos__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "p_img p_img p_img p_img p_text p_text p_text"; }
+    .productos__container .prod__img {
+      grid-area: p_img; }
+    .productos__container .prod__text {
+      grid-area: p_text; }
+    .productos__container .productos__text {
+      width: 100%; }
+  .carousel {
+    margin: 10px auto; } }
+
+@media (min-width: 1024px) {
+  .productos__container .productos__cont-info {
+    padding: 80px 0px; }
+  .productos__container .productos__text {
+    width: 90%; }
+  .productos__compu-1 {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "p_img p_img p_img p_text p_text"; }
+    .productos__compu-1 .prod__img {
+      grid-area: p_img; }
+    .productos__compu-1 .prod__text {
+      grid-area: p_text; }
+    .productos__compu-1 .productos__text {
+      color: #b9b9b9; }
+  .productos__compu-2 {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "p_text p_text p_img p_img p_img"; }
+    .productos__compu-2 .prod__img {
+      grid-area: p_img; }
+    .productos__compu-2 .prod__text {
+      grid-area: p_text; }
+    .productos__compu-2 .productos__text {
+      color: #292828; }
+  .carousel {
+    width: 85%; }
+    .carousel .img__m {
+      width: 75%; } }
+
+/*  SECCIÓN-PRO-LENTES */
+.main__sec-lentes-hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552740/proyecto-coder-hause/pro-lent-reflex_ksesqd.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  color: white; }
+  .main__sec-lentes-hero .hero__text {
+    margin: 0px auto;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600; }
+
+.lentes__container {
+  padding: 40px 0px;
+  display: grid;
+  gap: 15px;
+  text-align: center; }
+  .lentes__container .lentes__carta {
+    margin: 5px;
+    padding: 10px 10px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    display: grid; }
+    .lentes__container .lentes__carta .lentes__title {
+      margin: 12px 0px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .lentes__container .lentes__carta .lentes__img {
+      background: #aeaeb1;
+      background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%);
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px auto;
+      width: 95%; }
+    .lentes__container .lentes__carta .lentes__descrip {
+      margin: 0 auto;
+      padding: 12px 0px;
+      width: 90%; }
+      .lentes__container .lentes__carta .lentes__descrip .lentes__descrip-text {
+        font-size: 400;
+        font-style: italic;
+        list-style: none;
+        margin: 0 auto;
+        padding: 12px 0px 0px 0px;
+        width: 90%; }
+    .lentes__container .lentes__carta .lentes__btn {
+      text-align: center;
+      margin: 20px 0px; }
+      .lentes__container .lentes__carta .lentes__btn .productos__precio {
+        margin-right: 10px;
+        padding: 8px 18px;
+        color: black;
+        font-weight: 550;
+        background-color: #c5c4c4;
+        border-radius: 5px; }
+      .lentes__container .lentes__carta .lentes__btn .btn__comprar {
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 8px 18px;
+        font-weight: 550;
+        color: white;
+        background-color: orange;
+        border-radius: 5px; }
+      .lentes__container .lentes__carta .lentes__btn .btn__comprar:hover {
+        background-color: rgba(255, 179, 37, 0.705);
+        border: 1px solid orange;
+        box-shadow: 0 0 15px #faab00; }
+  .lentes__container .lentes__carta:hover {
+    box-shadow: 0 0 15px rgba(48, 48, 48, 0.582); }
+
+@media (min-width: 640px) {
+  .lentes__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 95%; } }
+
+@media (min-width: 768px) {
+  .main__sec-lentes-hero {
+    height: 70vh; }
+  .lentes__container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 90%; } }
+
+@media (min-width: 1024px) {
+  .lentes__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: 90%; } }
+
+.main__sec-acce-hero {
+  height: 80vh;
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613258/proyecto-coder-hause/diego-geraldi-nanZbhKh7Dc-unsplash_w0wkic.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  color: white; }
+  .main__sec-acce-hero .hero__text {
+    text-align: center;
+    margin: 0px auto;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600; }
+
+.accesorios__sec-container {
+  padding: 40px 0px;
+  display: grid;
+  gap: 15px;
+  text-align: center; }
+  .accesorios__sec-container .accesorios__sec-carta {
+    margin: 5px;
+    padding: 10px 10px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    display: grid; }
+    .accesorios__sec-container .accesorios__sec-carta .accesorios__sec-title {
+      margin: 12px 0px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .accesorios__sec-container .accesorios__sec-carta .accesorios__sec-img {
+      background: #aeaeb1;
+      background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%);
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px auto;
+      width: 95%; }
+    .accesorios__sec-container .accesorios__sec-carta .accesorios__btn {
+      text-align: center;
+      margin: 20px 0px; }
+      .accesorios__sec-container .accesorios__sec-carta .accesorios__btn .productos__precio {
+        margin-right: 10px;
+        padding: 8px 18px;
+        font-weight: 550;
+        background-color: #c5c4c4;
+        border-radius: 5px; }
+      .accesorios__sec-container .accesorios__sec-carta .accesorios__btn .btn__comprar {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+        padding: 8px 18px;
+        font-weight: 550;
+        background-color: orange;
+        border-radius: 5px; }
+      .accesorios__sec-container .accesorios__sec-carta .accesorios__btn .btn__comprar:hover {
+        background-color: rgba(255, 179, 37, 0.705);
+        border: 1px solid orange;
+        box-shadow: 0 0 15px #faab00; }
+  .accesorios__sec-container .accesorios__sec-carta:hover {
+    box-shadow: 0 0 15px rgba(48, 48, 48, 0.582); }
+
+@media (min-width: 640px) {
+  .accesorios__sec-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 95%; } }
+
+@media (min-width: 768px) {
+  .accesorios__sec-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 90%; } }
+
+@media (min-width: 1024px) {
+  .accesorios__sec-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: 90%; } }

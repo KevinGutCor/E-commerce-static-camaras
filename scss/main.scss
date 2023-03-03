@@ -1,6 +1,19 @@
 /* Utilidades */
-@import '../scss/utilidades/reset';
-@import '../scss/utilidades/colors';
-@import '../scss/utilidades/typo';
+@import './utilidades/typo';
+@import './utilidades/colors';
+@import './utilidades/reset';
 
 /* Secciones */
+@import './secciones/header';
+@import './secciones/main-index';
+@import './secciones/main-locales';
+@import './secciones/main-galeria'; 
+@import './secciones/footer';
+@import './secciones/main-nosotros';
+
+@import '../scss/secciones/main-sec-cam';
+@import '../scss/secciones/main-sec-lents';
+@import '../scss/secciones/main-sec-acce';
+
+
+

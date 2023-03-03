@@ -1,0 +1,95 @@
+.main__sec-acce-hero{
+    height: 80vh;
+    background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613258/proyecto-coder-hause/diego-geraldi-nanZbhKh7Dc-unsplash_w0wkic.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: white;
+    .hero__text{
+        text-align: center;
+        margin: 0px auto;
+        width: 80%;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.accesorios__sec-container{
+    padding: 40px 0px;
+    display: grid;
+    gap: 15px;
+    text-align: center;
+    .accesorios__sec-carta{
+        margin: 5px;
+        padding: 10px 10px;
+        background-color: #e4e4e4;
+        border-radius: 10px;
+        display: grid;
+        .accesorios__sec-title{
+            margin: 12px 0px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .accesorios__sec-img{
+            background: rgb(174,174,177);
+            background: linear-gradient(344deg, rgba(174,174,177,1) 15%, rgba(212,212,219,1) 39%, rgba(241,251,252,1) 76%);
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px auto;
+            width: 95%;
+        }
+        .accesorios__btn{
+            text-align: center;
+            margin: 20px 0px; 
+            .productos__precio{
+                margin-right: 10px;
+                padding: 8px 18px;
+                font-weight: 550;
+                background-color: rgb(197, 196, 196);
+                border-radius: 5px;
+            }
+            .btn__comprar{
+                text-decoration: none;
+                color: white;
+                margin-left: 10px;
+                padding: 8px 18px;
+                font-weight: 550;
+                background-color: $color-btn;
+                border-radius: 5px;
+            }
+            .btn__comprar:hover{
+                background-color: $color-btn-hover;
+                border: 1px solid orange;
+                box-shadow: 0 0 15px rgb(250, 171, 0);
+            }
+        }
+    }
+    .accesorios__sec-carta:hover{
+        box-shadow: 0 0 15px rgba(48, 48, 48, 0.582);
+    }
+}
+
+@media (min-width: 640px){
+    .accesorios__sec-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px){
+    .accesorios__sec-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px){
+    .accesorios__sec-container{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        width: 90%;
+    }
+}

@@ -1,0 +1,48 @@
+/* SECCIÓN MAIN-NOSOTROS */
+.nosotros__hero{
+    height: 80vh;
+    background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613237/proyecto-coder-hause/yarenci-hdz-7hjgRvEBWKE-unsplash_dokihg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .hero__container{
+        width: 80%;
+        text-align: center;
+        .hero__text{
+            font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+    }
+}
+
+/* Seccipon historia */
+.historia__container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    .historia__title-h3{
+        font-weight: 600;
+    }
+    .historia__img{
+        width: 95%;
+        margin-bottom: 30px;  
+        box-shadow: 0 0 20px rgba(65, 64, 62, 0.685);  
+    }
+}
+
+@media (min-width: 768px){
+    .nosotros__hero{
+        height: 70vh;
+    }
+    .historia__container{
+        width: 75%;
+        .historia__img{
+            width: 85%;
+        }
+    }
+}

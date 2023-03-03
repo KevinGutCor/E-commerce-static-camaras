@@ -1,0 +1,259 @@
+
+/* SECCIÓN MAIN-INDEX*/
+.hero{
+    height: 80vh;
+    background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613263/proyecto-coder-hause/rueban-prince-gJn5s585nDI-unsplash_dmaqst.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .hero__container{
+        width: 80%;
+        text-align: center;
+        .hero__text{
+            font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+    }
+}    
+
+/* Sección camara index */
+.camara__container{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    .camara__title{
+        text-transform: uppercase;
+    }
+    .camara__img{
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    }
+}
+
+/* Sección lentes index */
+.lentes{
+    background-color: black;
+    color: white;
+    .lentes__title{
+        text-transform: uppercase;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .lentes__container{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        .lentes__img{
+            background: rgb(227,17,17);
+            background: linear-gradient(344deg, rgba(227,17,17,1) 3%, rgba(250,73,14,1) 32%, rgba(250,222,32,1) 81%);
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+        }
+        .lent-img-2{
+            background: rgb(168,7,154);
+            background: linear-gradient(204deg, rgba(168,7,154,1) 26%, rgba(90,67,244,1) 68%, rgba(147,180,249,1) 100%);
+        }
+        .lent-img-3{
+            background-image: linear-gradient(to right top, #0038ff, #005dff, #0079ff, #0090ff, #00a5ff, #00a8ff, #00acff, #00afff, #2ba2ff, #798dff, #c169ff, #ff00f4);
+        }
+        .lentes__cartas{
+            background-color: rgb(14, 14, 14);
+            border-radius: 15px;
+            margin: 15px 0px;
+            padding: 20px 0px;
+            text-align: center;
+        }
+        .lentes__paragraph{
+            padding: 5px;
+        }
+    }
+    
+}
+
+/* Sección galería index */
+.galeria{
+    height: 75vh;
+    background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552757/proyecto-coder-hause/img-prueba2-orange_zshs4n.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .galeria__container{
+        text-align: center;
+        width: 80%;
+    }
+    .galeria__text{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* Sección accesorios index */
+.accesorios__container{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    .accesorios__img{
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    }
+}
+
+/* Sección nosotros index */
+.nosotros{
+    background-color: black;
+    color: white;
+    .nosotros__container{
+        width: 90%;
+        margin: 0px auto;
+        padding: 30px 0px;
+        display: grid;
+        place-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .nosotros__img{
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(77, 76, 76, 0.61);
+    }
+}
+
+/* Sección datos index */
+.datos{
+    margin: 30px 0px;
+    text-align: center;
+    .datos__container{
+        margin: 0px auto;
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        gap: 20px;
+        text-align: center;
+        .datos__cartas{
+            background-color: rgb(221, 219, 219);
+            padding: 20px 5px;
+            border-radius: 5px;
+            .datos__paragraph{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    /* sección hero index*/
+    .hero{
+        height: 70vh;
+    }
+
+    /* Sección camara index*/
+    .camara__container{
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Sección lentes index */
+    .lentes__container{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        .lentes__cartas{
+            padding: 1rem ;
+        }
+    }
+
+    /* Sección galería index*/
+    .galeria{
+        height: 65vh;
+    }
+
+    /* Sección accesorios index */
+    .accesorios__container{
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        grid-template-areas:
+        "elemt-1    elemt-2";
+        .accesorios__text{
+            grid-area: elemt-2;
+        }
+        .accesorios__img{
+            grid-area: elemt-1;
+        }
+    }
+
+    /* Sección nosotros index */
+    .nosotros__container{
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Sección datos index*/
+    .datos__container{
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        .datos__cartas{
+            padding: 20px 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    /* camara index*/
+    .camara__container{
+        .camara__paragraph{
+            padding: 1rem 0px;
+        }
+        .camara__img{
+            width: 80%;
+        }
+    }
+
+    /* lentes index */
+    .lentes__container{
+        width: 100%;
+        padding-bottom: 30px;
+        .lentes__paragraph{
+            margin: 1.2rem 12px;
+        }
+    }
+
+    /* accesorios index */
+    .accesorios__container{
+        .accesorios__paragraph{
+            padding: 1rem 0px;
+        }
+        .accesorios__img{
+            width: 80%;
+        }
+    }
+
+    /* nosotros index */
+    .nosotros__container{
+        margin: 30px 0px;
+        .nosotros__paragraph{
+            padding: 1rem 0px;
+        }
+        .nosotros__img{
+            width: 75%;
+        }
+    }
+}
