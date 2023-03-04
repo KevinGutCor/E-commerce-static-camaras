@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* Utilidades */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&family=Righteous&family=Roboto+Mono:wght@300;400&display=swap");
-/* Variables globales */
-/* color navbar */
-/* color de botones */
 * {
   margin: 0;
   padding: 0; }
@@ -815,6 +812,7 @@ a {
 
 @media (min-width: 1024px) {
   .accesorios__sec-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
     margin: 0 auto;
     width: 90%; } }
