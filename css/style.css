@@ -12,7 +12,7 @@ h2 {
   font-size: 2.1rem; }
 
 h3 {
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
 
 h4 {
   font-size: 1.3rem; }
@@ -108,7 +108,7 @@ a {
 /* SECCIÓN MAIN-INDEX*/
 .hero {
   height: 80vh;
-  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1677613263/proyecto-coder-hause/rueban-prince-gJn5s585nDI-unsplash_dmaqst.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676518690/proyecto-coder-hause/1-img-inicio_wp4fkj.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -668,17 +668,15 @@ a {
     margin: 5px;
     padding: 10px 10px;
     background-color: #e4e4e4;
-    border-radius: 10px;
     display: grid; }
     .lentes__container .lentes__carta .lentes__title {
       margin: 12px 0px;
-      text-transform: uppercase;
       font-weight: 600; }
     .lentes__container .lentes__carta .lentes__img {
-      background: #aeaeb1;
-      background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%);
-      border: 1px solid black;
-      border-radius: 10px;
+      background: #ffe9ad;
+      background: linear-gradient(337deg, rgba(255, 233, 173, 0.913603) 0%, rgba(254, 237, 189, 0.902398) 13%, #fbf7ed 69%, #fafafa 100%);
+      border: 1px solid #888888;
+      border-radius: 5px;
       margin: 5px auto;
       width: 95%; }
     .lentes__container .lentes__carta .lentes__descrip {
@@ -712,10 +710,10 @@ a {
         border-radius: 5px; }
       .lentes__container .lentes__carta .lentes__btn .btn__comprar:hover {
         background-color: rgba(255, 179, 37, 0.705);
-        border: 1px solid orange;
+        border: 1px solid #ffbb00;
         box-shadow: 0 0 15px #faab00; }
   .lentes__container .lentes__carta:hover {
-    box-shadow: 0 0 15px rgba(48, 48, 48, 0.582); }
+    box-shadow: 0 0 15px rgba(255, 200, 99, 0.582); }
 
 @media (min-width: 640px) {
   .lentes__container {
@@ -761,17 +759,15 @@ a {
     margin: 5px;
     padding: 10px 10px;
     background-color: #e4e4e4;
-    border-radius: 10px;
     display: grid; }
     .accesorios__sec-container .accesorios__sec-carta .accesorios__sec-title {
       margin: 12px 0px;
-      text-transform: uppercase;
       font-weight: 600; }
     .accesorios__sec-container .accesorios__sec-carta .accesorios__sec-img {
-      background: #aeaeb1;
-      background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%);
-      border: 1px solid black;
-      border-radius: 10px;
+      background: #ffe9ad;
+      background: linear-gradient(337deg, rgba(255, 233, 173, 0.913603) 0%, rgba(254, 237, 189, 0.902398) 13%, #fbf7ed 69%, #fafafa 100%);
+      border: 1px solid rgba(90, 90, 90, 0.719);
+      border-radius: 5px;
       margin: 5px auto;
       width: 95%; }
     .accesorios__sec-container .accesorios__sec-carta .accesorios__btn {
@@ -796,7 +792,7 @@ a {
         border: 1px solid orange;
         box-shadow: 0 0 15px #faab00; }
   .accesorios__sec-container .accesorios__sec-carta:hover {
-    box-shadow: 0 0 15px rgba(48, 48, 48, 0.582); }
+    box-shadow: 0 0 15px rgba(255, 200, 99, 0.582); }
 
 @media (min-width: 640px) {
   .accesorios__sec-container {
